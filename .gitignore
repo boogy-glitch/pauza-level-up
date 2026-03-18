@@ -10,3 +10,5 @@ coverage/
 !.env.example
 src-tauri/target/
 .vercel/
+
+.vercel
