@@ -1,0 +1,46 @@
+appId: com.pauzalevelup.app
+productName: Pauza Level Up
+copyright: Copyright © 2026
+
+directories:
+  output: installer
+  buildResources: build
+
+files:
+  - dist/**/*
+  - electron/**/*
+  - package.json
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.png
+
+nsis:
+  oneClick: true
+  perMachine: false
+  allowElevation: false
+  allowToChangeInstallationDirectory: false
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  installerHeaderIcon: build/icon.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Pauza Level Up
+
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: build/icon.png
+  category: public.app-category.education
+
+linux:
+  target:
+    - AppImage
+  icon: build/icon.png
+  category: Education

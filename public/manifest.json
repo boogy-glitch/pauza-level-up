@@ -1,0 +1,18 @@
+{
+  "name": "Pauza Level Up",
+  "short_name": "Pauza",
+  "description": "Aplicație educațională pentru pauze școlare incluzive și interactive",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
